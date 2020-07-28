@@ -1,1 +1,1 @@
-### <b>Repository contains my all submission codes in LeetCode</b>
+### <b>Repository contains my all submission codes of LeetCode</b>
