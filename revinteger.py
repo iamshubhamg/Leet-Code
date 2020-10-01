@@ -1,5 +1,3 @@
-Problem Description :
-
 Given a 32-bit signed integer, reverse digits of an integer.
 
 Example 1:
@@ -30,4 +28,5 @@ public:
         }
         return rev;
     }
-};                                          #return the value if its in the range
+};                                          
+}
