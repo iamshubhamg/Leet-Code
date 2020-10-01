@@ -31,4 +31,5 @@ class Solution:
                 n = square    
                 if n < 243:
                     s.add(n)  
-        return True
+      if (a=b)
+    return True
