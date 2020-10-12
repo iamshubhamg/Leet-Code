@@ -50,6 +50,4 @@ int main() {
         return 0;
         }
  }
- printf("Magic matrix");
- return 0;
 }
