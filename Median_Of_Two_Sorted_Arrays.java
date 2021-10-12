@@ -1,5 +1,3 @@
-package hacktoberfest;
-
 // Question Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 
