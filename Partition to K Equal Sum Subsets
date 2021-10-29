@@ -1,0 +1,35 @@
+class Solution {
+public:
+     int total;
+    bool solve(vector<int> &A,int sum,int idx,int k)
+    {
+        if(k==0) return true;
+        
+        if(sum==0) return solve(A,total,0,k-1);
+            
+        if(idx==A.size()) return false;
+        
+        for(int i=idx;i<A.size();i++)
+        {
+            if(A[i]<=sum && A[i]!=INT_MAX)
+            {
+                int temp=A[i];
+                A[i]=INT_MAX;
+                if(solve(A,sum-temp,i+1,k)) return true;
+                A[i]=temp;
+            }
+        }
+        return false;
+    }
+    
+    bool canPartitionKSubsets(vector<int>& nums, int k) 
+    {
+        int sum=0;
+        for(auto x:nums)
+            sum+=x;
+        
+        if(sum%k!=0) return false;
+        total=sum/k;
+        return solve(nums,sum/k,0,k);
+    }
+};
