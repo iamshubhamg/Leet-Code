@@ -1,0 +1,21 @@
+class Solution {
+public:
+    long long countSubarrays(vector<int>& a, int mn, int mx) {
+        int i,p=-1,pmn=-1,pmx=-1,n=a.size();
+        long long int ans=0;
+        for(i=0;i<n;i++)
+        {
+            if(mn<=a[i] && a[i]<=mx)
+            {
+                if(a[i]==mn)
+                    pmn=i;
+                if(a[i]==mx)
+                    pmx=i;
+                    ans+=max(0,min(pmx,pmn)-p);
+                
+            }
+            else p=i;
+        }
+        return ans;
+    }
+};
