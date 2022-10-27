@@ -3,8 +3,8 @@
 # <b>Repository contains submission codes of LeetCode</b>
 ## You can use this repo as your Hactoberfest 2022 contribution.
 
-### Languages used : PYTHON ,C++ AND JAVA ALSO.
-### Contribute your leetcode Solutions. 
+### Languages used : PYTHON, C++ AND JAVA ALSO.
+### Contribute your leetcode solutions. 
 ### Try to add the link of Leetcode problem in your solution as comments.
 
 ### Happy HacktoberFest !! 🙌😄
